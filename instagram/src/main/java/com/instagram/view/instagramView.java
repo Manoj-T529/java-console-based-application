@@ -84,6 +84,7 @@ public class instagramView {
 					System.out.println(" 3. Enter 3 to View Profile");
 					System.out.println(" 4. Enter 4 to Search Profile");
 					System.out.println(" 5. Enter 5 to ViewAllProfile");
+					System.out.println(" 6. Enter 6 to View TimeLine");
 			
 
 		
@@ -147,8 +148,7 @@ public class instagramView {
 							System.out.println();
 							
 							
-							System.out.println("1.  Select the profile Whom You Want To Send Messages");
-							System.out.println("2.  Enter 2 to View TimeLine");
+							System.out.println("1. Enter 1 To Send Messages");
 							
 							int ch2=s.nextInt();
 							String str1;
@@ -169,23 +169,11 @@ public class instagramView {
 								System.out.println("Can't Access Your TimeLine");
 								}
 								break;
-								
-								case 2:int c8=ic.viewTimeLineController();
-								
-								if(c8>0)
-								{
-									System.out.println("TimeLine Details Showed");
-								}
-								else
-								{
-									System.out.println("Not Able to Show Your TimeLine Details");
-								}
-								break;
-								
+																
 								default:System.out.println("Please Select The Required Option");
 
 							}
-							System.out.println("Do You Want to View TimeLine!  y/n");
+							System.out.println("Do You Want to Send Messages Again!  y/n");
 							str1=s.next();
 							
 							}while(str1.equals("y"));
@@ -195,6 +183,19 @@ public class instagramView {
 							System.out.println("No Records Found");
 						}
 							break;
+							
+						case 6:int c8=ic.viewTimeLineController();
+						
+						if(c8>0)
+						{
+							System.out.println("TimeLine Details Showed");
+						}
+						else
+						{
+							System.out.println("Not Able to Show Your TimeLine Details");
+						}
+						break;
+
 							
 						default:System.out.println("Wrong Choice");
 						}

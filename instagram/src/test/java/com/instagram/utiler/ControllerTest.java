@@ -78,13 +78,6 @@ public class ControllerTest {
 		assert i>0:"Searching Failed";
 	}
 
-//	@Test
-//	public void testTimelineController() {
-//
-//		int i=ii.timelineController(); 
-//		
-//		assert i>0:"TimeLine Not Found";
-//	}
 
 	@Test
 	public void testViewAllProfileController() {

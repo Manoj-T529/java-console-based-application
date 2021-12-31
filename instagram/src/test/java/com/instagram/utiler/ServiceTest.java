@@ -27,23 +27,23 @@ public class ServiceTest {
 		ii=null;
 	}
 
-	@Test
-	public void testCreateProfileService() {
-
-		instagramUser iu=new instagramUser();
-		
-
-		iu.setMobile(1234567890);
-		iu.setName("ABC");
-		iu.setEmail("ABC@gmail.com");
-		iu.setPassword("ABC@1");
-		iu.setAddress("chennai");
-		
-		
-		int i=ii.createProfileService(iu);
-		
-		assert i>0: "Profile Creation Failed";
-	}
+//	@Test
+//	public void testCreateProfileService() {
+//
+//		instagramUser iu=new instagramUser();
+//		
+//
+//		iu.setMobile(1234567811);
+//		iu.setName("BBC");
+//		iu.setEmail("BBC@gmail.com");
+//		iu.setPassword("BBC@1");
+//		iu.setAddress("chennai");
+//		
+//		
+//		int i=ii.createProfileService(iu);
+//		
+//		assert i>0: "Profile Creation Failed";
+//	}
 
 	@Test
 	public void testLoginPageService() {
@@ -66,58 +66,58 @@ public class ServiceTest {
 		if(echoice==1)
 		{
 			iu.setMobile(1234567890);
-			iu.setEmail("I@gmail.com");
+			iu.setEmail("F@g");
 		}
 		else if(echoice==2)
 		{	
 			
-					iu.setName("II");
-					iu.setEmail("I@gmail.com");
+					iu.setName("FF");
+					iu.setEmail("F@g");
 		}
 		else if(echoice==3)
 		{	
 			
-			 iu.setPassword("I@1");
-			 iu.setEmail("I@gmail.com");
+			 iu.setPassword("F@1");
+			 iu.setEmail("F@g");
 		}
 		else if(echoice==4)
 		{
 			 iu.setAddress("chennai");
-			 iu.setEmail("I@gmail.com");
+			 iu.setEmail("F@g");
 			 
 
 		}
 		else
 		{
 			iu.setMobile(1234567890);
-			iu.setName("II");
-			iu.setPassword("I@1");
+			iu.setName("FF");
+			iu.setPassword("F@1");
 			 iu.setAddress("chennai");
-			 iu.setEmail("I@gmail.com");
+			 iu.setEmail("F@g");
 		}
 		int i=ii.editProfileService(iu, echoice);
 		
 		assert i>0: "Editing Failed";
 	}
-
-	@Test
-	public void testDeleteProfileService() {
-		
-		instagramUser iu=new instagramUser();
-		
-		iu.setEmail("ABC@gmail.com");
-		
-		int i=ii.deleteProfileService(iu); 
-		
-		assert i>0: "Deletion Failed";
-	}
+//
+//	@Test
+//	public void testDeleteProfileService() {
+//		
+//		instagramUser iu=new instagramUser();
+//		
+//		iu.setEmail("ABC@gmail.com");
+//		
+//		int i=ii.deleteProfileService(iu); 
+//		
+//		assert i>0: "Deletion Failed";
+//	}
 
 	@Test
 	public void testViewProfileService() {
 
 		instagramUser iu=new instagramUser();
 		
-		iu.setEmail("I@gmail.com");
+		iu.setEmail("j@g");
 		
 		instagramUser i=ii.viewProfileService(iu);
 	
@@ -132,7 +132,7 @@ public class ServiceTest {
 		
 		if(echoice==1)
 		{
-		iu.setName("ABC");
+		iu.setName("FF");
 		}
 		else
 		{
@@ -143,12 +143,6 @@ public class ServiceTest {
 		
 		assert i != null : "Searching Failed";
 	}
-//
-//	@Test
-//	public void testTimelineService() {
-//	
-//		
-//	}
 
 	@Test
 	public void testCreateOtpService() {

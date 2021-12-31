@@ -26,18 +26,18 @@ public class DAOTest {
 		ii=null;
 	}
 
-//	@Test
-//	public void testLoginPageDAO() {
-//		
-//		instagramUser iu=new instagramUser();
-//		
-//		iu.setEmail("ABC@gmail.com");
-//		iu.setPassword("ABC@1");
-//		
-//		instagramUser i=ii.loginPageDAO(iu);
-//		
-//		assert i != null: "Login Failed";
-//	}
+	@Test
+	public void testLoginPageDAO() {
+		
+		instagramUser iu=new instagramUser();
+		
+		iu.setEmail("W@gmail.com");
+		iu.setPassword("W@1");
+		
+		instagramUser i=ii.loginPageDAO(iu);
+		
+		assert i != null: "Login Failed";
+	}
 
 //	@Test
 //	public void testCreateProfileDAO() {
@@ -56,70 +56,70 @@ public class DAOTest {
 //	}
 
 	
-//	@Test
-//	public void testEditProfileDAO() {
-//		
-//		instagramUser iu=new instagramUser();
-//		int echoice=0;
-//		
-//		if(echoice==1)
-//		{
-//			iu.setMobile(1234567890);
-//			iu.setEmail("JJ@gmail.com");
-//		}
-//		else if(echoice==2)
-//		{	
-//			
-//					iu.setName("JJ");
-//					iu.setEmail("JJ@gmail.com");
-//		}
-//		else if(echoice==3)
-//		{	
-//			
-//			 iu.setPassword("2356");
-//			 iu.setEmail("JJ@gmail.com");
-//		}
-//		else if(echoice==4)
-//		{
-//			 iu.setAddress("chennai");
-//			 iu.setEmail("JJ@gmail.com");
-//		}
-//	else
-//	{
-//		iu.setMobile(1234567890);
-//		iu.setName("JJ");
-//		iu.setPassword("2356");
-//		 iu.setAddress("chennai");
-//		 iu.setEmail("JJ@gmail.com");
-//	}
-//		int i=ii.editProfileDAO(iu, echoice);
-//		
-//		assert i>0: "Editing Failed";
-//	}
-
 	@Test
-	public void testDeleteProfileDAO() {
+	public void testEditProfileDAO() {
 		
 		instagramUser iu=new instagramUser();
+		int echoice=0;
 		
-		iu.setEmail("BBC@gmail.com");
+		if(echoice==1)
+		{
+			iu.setMobile(1234567890);
+			iu.setEmail("JJ@g");
+		}
+		else if(echoice==2)
+		{	
 		
-		int i=ii.deleteProfileDAO(iu); 
+					iu.setName("JJ");
+					iu.setEmail("JJ@g");
+		}
+ 	else if(echoice==3)
+		{	
+			
+			 iu.setPassword("2356");
+			 iu.setEmail("JJ@g");
+		}
+		else if(echoice==4)
+		{
+			 iu.setAddress("chennai");
+			 iu.setEmail("JJ@");
+		}
+	else
+	{
+		iu.setMobile(1234567890);
+		iu.setName("JJ");
+		iu.setPassword("2356");
+		 iu.setAddress("chennai");
+		 iu.setEmail("JJ@g");
+	}
+		int i=ii.editProfileDAO(iu, echoice);
 		
-		assert i>0: "Deletion Failed";
+		assert i>0: "Editing Failed";
 	}
 
 //	@Test
-//	public void testViewProfileDAO() {
+//	public void testDeleteProfileDAO() {
 //		
 //		instagramUser iu=new instagramUser();
 //		
-//		iu.setEmail("JJ@gmail.com");
+//		iu.setEmail("BBC@gmail.com");
 //		
-//		instagramUser i=ii.viewProfileDAO(iu);
-//	
-//		assert i != null: "No Records";
+//		int i=ii.deleteProfileDAO(iu); 
+//		
+//		assert i>0: "Deletion Failed";
 //	}
+
+	@Test
+	public void testViewProfileDAO() {
+		
+		instagramUser iu=new instagramUser();
+		
+		iu.setEmail("JJ@g");
+		
+		instagramUser i=ii.viewProfileDAO(iu);
+	
+		assert i != null: "No Records";
+	}
 
 	@Test
 	public void testCreateOtpDAO() {
@@ -154,11 +154,6 @@ public class DAOTest {
 		assert i != null : "Searching Failed";
 	}
 
-//	@Test
-//	public void testTimelineDAO() {
-//		
-//		assert i>0: "No TimeLine Found";
-//	}
 
 	@Test
 	public void testViewAllProfileDAO() {

@@ -389,8 +389,8 @@ public class instagramDAO implements instagramDAOInterface {
 			
 			
 			
-			 ps=con.prepareStatement("select * from instaTimeLine ");
-			 
+			 ps=con.prepareStatement("select * from instaTimeLine");
+		
 
 			
 			

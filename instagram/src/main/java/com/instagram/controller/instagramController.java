@@ -25,7 +25,6 @@ public class instagramController implements instagramControllerInterface {
 	
 	
 	
-	@Override
 	public int createProfileController() {
 		int i=0;
 		long mobile=0;
@@ -119,7 +118,6 @@ public class instagramController implements instagramControllerInterface {
 
 
 
-	@Override
 	public int editProfileController() {
 		
 		
@@ -250,7 +248,6 @@ public class instagramController implements instagramControllerInterface {
 
 
 
-	@Override
 	public int deleteProfileController() {
 		
 
@@ -276,7 +273,6 @@ public class instagramController implements instagramControllerInterface {
 
 
 
-	@Override
 	public int viewProfileController() {
 		
 
@@ -315,7 +311,6 @@ public class instagramController implements instagramControllerInterface {
 		return i;
 	}
 
-	@Override
 	public int createOtpController() {
 		
 
@@ -369,7 +364,6 @@ public class instagramController implements instagramControllerInterface {
 	}
 
 
-	@Override
 	public int searchProfileController() {
 		
 		
@@ -452,7 +446,6 @@ public class instagramController implements instagramControllerInterface {
 
 
 
-	@Override
 	public int timelineController() {
 		
 		
@@ -511,7 +504,6 @@ public class instagramController implements instagramControllerInterface {
 
 
 
-	@Override
 	public int viewAllProfileController() {
 		
 
@@ -549,18 +541,22 @@ public class instagramController implements instagramControllerInterface {
 
 
 
-	@Override
 	public int viewTimeLineController() {
 		
 		
 
 		instagramUser iu=new instagramUser();
 		instagramServiceInterface is=serviceFactory.createObject();
-		
+	
 		
 		System.out.println();
 		log.info("<<=====================To View TimeLine=================>");
 		System.out.println();
+		
+		
+	
+		
+		
 	
 		int i=0;
 		
