@@ -20,6 +20,8 @@ BASIC INSTAGRAM CONSOLE BASED APPLICATION
  * Update Profile
  * Delete Profile
  * Search Profile
+ * ViewALL Profile
+ * Timeline
                   
   ## CHALLENGES and Future Enhancement:
                   
